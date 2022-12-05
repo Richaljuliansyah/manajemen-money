@@ -103,7 +103,7 @@ class PieChartView extends StatelessWidget {
                 onSelected: (bool selected) {
                   controller.setTypeFiler(index);
                 },
-                backgroundColor: Colors.grey.shade200,
+                backgroundColor: Colors.grey.shade300,
                 selectedColor: const Color(0xffc8e2f8),
                 shape: StadiumBorder(
                     side: BorderSide(
@@ -128,7 +128,7 @@ class PieChartView extends StatelessWidget {
                     enable: true,
                     borderColor: Colors.white,
                     borderWidth: 1,
-                    format: 'point.x: \u{20B9}point.y'),
+                    format: 'point.x: \u{0052}\u{0070}point.y'),
                 series: <CircularSeries>[
                   PieSeries<CatChartData, String>(
                       animationDuration: 700,
