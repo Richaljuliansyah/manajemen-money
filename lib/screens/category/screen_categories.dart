@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:money_manager/constants/app_theme.dart';
+import 'package:money_manager/contants/app_theme.dart';
 import 'package:money_manager/controllers/category_controller.dart';
 import 'package:money_manager/models/category.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -84,8 +84,8 @@ class _ScreenCategoriesState extends State<ScreenCategories>
                       gradient: LinearGradient(colors: [
                         Colors.white,
                         _tabController.index == 0
-                            ? const Color(0xFFEBFFE3)
-                            : const Color(0xFFFCE5E5)
+                            ? Color(0xFF649C4D)
+                            : Color(0xFFB31111)
                       ])),
                   labelColor: Colors.black,
                   unselectedLabelColor: Colors.black54,
