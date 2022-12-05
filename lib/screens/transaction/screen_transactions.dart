@@ -49,7 +49,7 @@ class _TransactionsScreenState extends State<TransactionsScreen>
           title: const Text('Transactions'),
           centerTitle: true,
         ),
-        backgroundColor: const Color(0xFFF3f3f3),
+        backgroundColor: Color(0xffD6E4E5),
         floatingActionButton: AnimatedSlide(
           offset: showFAB ? Offset.zero : const Offset(0, 1.5),
           duration: const Duration(milliseconds: 300),
