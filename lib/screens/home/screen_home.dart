@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:get/get.dart';
 
-import 'package:money_manager/constants/app_theme.dart';
+import 'package:money_manager/contants/app_theme.dart';
 import 'package:money_manager/controllers/category_controller.dart';
 import 'package:money_manager/controllers/monthly_chart_controller.dart';
 import 'package:money_manager/controllers/transaction_controller.dart';
@@ -62,7 +62,7 @@ class _ScreenHomeState extends State<ScreenHome> {
                 icon: const Icon(Icons.search))
           ],
         ),
-        backgroundColor: const Color(0xFFF3f3f3),
+        backgroundColor: const Color(0xFFD6E4E5),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -164,9 +164,9 @@ class _ScreenHomeState extends State<ScreenHome> {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      '\u{20B9} $totalBalance',
+                      '\u{0052}\u{0070} $totalBalance',
                       style: const TextStyle(
-                          fontSize: 20,
+                          fontSize: 24,
                           color: AppTheme.darkGray,
                           fontWeight: FontWeight.bold),
                     )
@@ -213,7 +213,7 @@ class _ScreenHomeState extends State<ScreenHome> {
                       ),
                       const SizedBox(height: 5),
                       Text(
-                        '\u{20B9} $totalIncome',
+                        '\u{0052}\u{0070} $totalIncome',
                         style: const TextStyle(
                             fontSize: 15,
                             color: Color(0xff4EAE51),
@@ -261,7 +261,7 @@ class _ScreenHomeState extends State<ScreenHome> {
                       ),
                       const SizedBox(height: 5),
                       Text(
-                        '\u{20B9} $totalExpense',
+                        '\u{0052}\u{0070} $totalExpense',
                         style: const TextStyle(
                             fontSize: 15,
                             color: Color(0xffFF5F5F),
