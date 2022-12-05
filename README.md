@@ -1,15 +1,8 @@
-![banner](https://user-images.githubusercontent.com/58967706/193883385-6c15348e-8b7d-473f-bfd3-23282f6631b4.png)
-
 
 # Money Manager
 A money management application which lets users monitor their monthly expenses and income and gives them a detailed analysis of their spends, thereby helping them to cut down their expenses.
 
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) 
-
-## Download
-
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play"  height="70"/>](https://play.google.com/store/apps/details?id=in.brototype.diary_money_manager)
-
 
 ## Features
 - User can add/edit transactions 
