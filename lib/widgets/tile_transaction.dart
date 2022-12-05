@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:money_manager/constants/app_theme.dart';
+import 'package:money_manager/contants/app_theme.dart';
 import 'package:money_manager/controllers/transaction_controller.dart';
 import 'package:money_manager/models/transaction.dart';
 import 'package:money_manager/screens/transaction/add_transaction.dart';
@@ -114,7 +114,7 @@ class TransactionTile extends StatelessWidget {
                   ],
                 ),
               ),
-              Text('\u{20B9} ${transaction.amount.toString()}',
+              Text('\u{0052}\u{0070} ${transaction.amount.toString()}',
                   style: TextStyle(
                       color: textColors[transaction.type.index],
                       fontSize: 14,
