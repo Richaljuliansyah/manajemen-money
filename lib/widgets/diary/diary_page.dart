@@ -106,7 +106,8 @@ class _DiaryPageState extends State<DiaryPage> {
                       children: [
                         Dtitle(
                             title: 'Total Income',
-                            trailing: '\u{20B9} ${controller.totalIncome}',
+                            trailing:
+                                '\u{0052}\u{0070} ${controller.totalIncome}',
                             trailingColor:
                                 const Color.fromARGB(255, 30, 161, 34)),
                         ListView.builder(
@@ -122,7 +123,8 @@ class _DiaryPageState extends State<DiaryPage> {
                         const BlankLine(),
                         Dtitle(
                             title: 'Total Expense',
-                            trailing: '\u{20B9} ${controller.totalExpense}',
+                            trailing:
+                                '\u{0052}\u{0070} ${controller.totalExpense}',
                             trailingColor: Colors.red),
                         ListView.builder(
                           shrinkWrap: true,
@@ -137,7 +139,7 @@ class _DiaryPageState extends State<DiaryPage> {
                         const BlankLine(),
                         Dtitle(
                           title: 'Balance',
-                          trailing: '\u{20B9} ${controller.dayBalance}',
+                          trailing: '\u{0052}\u{0070} ${controller.dayBalance}',
                         )
                       ],
                     ),
