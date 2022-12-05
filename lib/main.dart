@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         appBarTheme: const AppBarTheme(backgroundColor: Color(0xff26384f)),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
-            backgroundColor: Color(0xff26384f)),
+            backgroundColor: Color(0xff1A374D)),
       ),
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
