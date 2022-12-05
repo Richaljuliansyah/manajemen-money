@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:money_manager/constants/app_theme.dart';
+import 'package:money_manager/contants/app_theme.dart';
 import 'package:money_manager/controllers/category_controller.dart';
 import 'package:money_manager/controllers/transaction_controller.dart';
 import 'package:money_manager/models/category.dart';
@@ -91,7 +91,7 @@ class _AddTransactionState extends State<AddTransaction> {
                   decoration: BoxDecoration(boxShadow: const [
                     BoxShadow(color: Colors.black),
                     BoxShadow(
-                      color: Colors.white,
+                      color: Color(0xFFD6E4E5),
                       spreadRadius: 0,
                       blurRadius: 4,
                     ),
@@ -149,7 +149,7 @@ class _AddTransactionState extends State<AddTransaction> {
                                 : null,
                         decoration: const InputDecoration(
                             prefixIcon: Icon(
-                              Icons.currency_rupee,
+                              Icons.currency_exchange,
                               color: Colors.blue,
                             ),
                             label: Text('Amount'),
@@ -177,7 +177,7 @@ class _AddTransactionState extends State<AddTransaction> {
             bottom: 0,
             child: Container(
               width: size.width,
-              color: Colors.white,
+              color: Color(0xffEEF1FF),
               child: Column(
                 children: [
                   const Divider(thickness: 1.5, height: 1.5),
@@ -233,8 +233,8 @@ class _AddTransactionState extends State<AddTransaction> {
           minHeight: 28,
           cornerRadius: 25.0,
           activeBgColors: const [
-            [Colors.white, Color(0xFFEBFFE3)],
-            [Colors.white, Color(0xFFFCE5E5)]
+            [Colors.white, Color(0xFF649C4D)],
+            [Colors.white, Color(0xFFB31111)]
           ],
           activeFgColor: Colors.black,
           inactiveBgColor: AppTheme.lihtGray,
@@ -336,7 +336,7 @@ class _CategorySheetState extends State<CategorySheet> {
       width: double.infinity,
       height: MediaQuery.of(context).size.height * .45,
       decoration: const BoxDecoration(
-          color: Colors.white,
+          color: Color(0xffEFF5F5),
           border: Border(top: BorderSide(color: Color(0xFF777777), width: .5)),
           boxShadow: [
             BoxShadow(),
@@ -382,7 +382,7 @@ class _CategorySheetState extends State<CategorySheet> {
                 itemBuilder: (ctx, index) {
                   return Container(
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 245, 245, 245),
+                        color: const Color(0xffEEF1FF),
                         border: Border.all(color: Colors.grey, width: .25)),
                     child: InkWell(
                       onTap: () {
