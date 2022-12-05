@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:money_manager/constants/app_theme.dart';
+import 'package:money_manager/contants/app_theme.dart';
 import 'package:money_manager/screens/settings/edit_profile.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'home/home_drawer.dart';
@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Container(
             width: double.infinity,
             height: double.infinity,
-            color: Colors.grey.shade100,
+            color: Color(0xffD6E4E5),
           ),
           Image.asset('assets/images/spl_top.png'),
           Align(
@@ -98,7 +98,7 @@ class _SplashScreenState extends State<SplashScreen> {
   checkInited(context) async {
     final prefs = await SharedPreferences.getInstance();
     final bool isInited = prefs.getBool('isInited') ?? false;
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
