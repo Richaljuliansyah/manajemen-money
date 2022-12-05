@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:money_manager/constants/strings.dart';
+import 'package:money_manager/contants/strings.dart';
 import 'package:money_manager/controllers/transaction_controller.dart';
 import 'package:money_manager/database/boxes.dart';
 import 'package:money_manager/models/category.dart';
@@ -247,7 +247,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         applicationName: 'Money Manager',
                         applicationVersion: 'version 1.0.1',
                         children: <Widget>[
-                          const Text('Developed by Ihsan Kottupadam')
+                          const Text('Developed by Kelompok 3')
                         ],
                       );
                     },
@@ -261,7 +261,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: const Text('Warning'),
+              title: const Text(
+                'WARNING!',
+                style:
+                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+              ),
               content: const Text(
                 "This will permanently delete the app's data including your transactions and preferences",
                 style: TextStyle(fontWeight: FontWeight.w500),
@@ -322,7 +326,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   feedback() async {
     final Uri emailLaunchUri = Uri(
         scheme: 'mailto',
-        path: 'ihsanpv007@gmail.com',
+        path: 'lydia.yusanti@gmail.com',
         query: 'subject=Feedback about Money Manager app&body=');
 
     if (!await launchUrl(emailLaunchUri)) {
